@@ -1,5 +1,6 @@
 import React from 'react';
 import { ChevronDown, Github, Linkedin, Mail, ExternalLink } from 'lucide-react';
+import pfp from '../assets/pfp.jpeg'
 
 const Hero: React.FC = () => {
   const scrollToSection = (sectionId: string) => {
@@ -18,7 +19,7 @@ const Hero: React.FC = () => {
             <div className="w-48 h-48 mx-auto rounded-full bg-gradient-to-r from-blue-500 to-teal-500 p-1">
               <div className="w-full h-full rounded-full bg-gray-200 dark:bg-gray-700 flex items-center justify-center overflow-hidden">
                 <img
-                  src='../../public/pfp.jpeg'
+                  src={pfp}
                   alt="Profile"
                   className="w-full h-full object-cover rounded-full"
                 />
