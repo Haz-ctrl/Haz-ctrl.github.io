@@ -82,7 +82,7 @@ const Contact: React.FC = () => {
             Let's Connect
           </h2>
           <p className="text-xl text-gray-600 dark:text-gray-300 max-w-3xl mx-auto">
-            I'm always excited to discuss new opportunities and innovative projects
+            I'm always excited to meet new people, discuss new opportunities and explore innovative projects!
           </p>
         </div>
 

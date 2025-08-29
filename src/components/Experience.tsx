@@ -1,55 +1,44 @@
 import React from 'react';
-import { Calendar, MapPin, ExternalLink, Code, Database, Cloud } from 'lucide-react';
+import { Calendar, MapPin, ExternalLink, Code, Database, Cloud, Briefcase } from 'lucide-react';
 
 const Experience: React.FC = () => {
   const experiences = [
     {
-      title: 'Graduate Student & Research Assistant',
-      company: 'University Computer Science Department',
-      location: 'University Campus',
-      period: '2023 - Present',
-      type: 'Academic',
-      description: 'Pursuing Master\'s in Computer Science while conducting research in machine learning and software engineering.',
-      achievements: [
-        'Maintaining high academic performance while working on advanced CS coursework',
-        'Conducting research in machine learning algorithms and their applications',
-        'Collaborating with faculty on software engineering best practices',
-        'Teaching and mentoring undergraduate students in programming fundamentals'
-      ],
-      technologies: ['Python', 'Machine Learning', 'Research Methods', 'Academic Writing'],
-      icon: <Code size={24} />
-    },
-    {
-      title: 'Software Development Projects',
-      company: 'Personal & Academic Projects',
-      location: 'Various',
-      period: '2022 - Present',
-      type: 'Project Work',
-      description: 'Developed multiple full-stack applications and contributed to open-source projects.',
-      achievements: [
-        'Built responsive web applications using React and modern JavaScript',
-        'Implemented backend services with Node.js and Python frameworks',
-        'Deployed applications on cloud platforms including AWS and Heroku',
-        'Contributed to open-source projects and maintained personal GitHub portfolio'
-      ],
-      technologies: ['React', 'Node.js', 'Python', 'AWS', 'Git', 'Docker'],
-      icon: <Database size={24} />
-    },
-    {
-      title: 'Technical Intern',
-      company: 'Technology Company',
-      location: 'Remote/On-site',
-      period: '2022',
+      title: 'Software Engineering Intern (CIB, Payments Technology)',
+      company: 'J.P. Morgan Chase',
+      location: 'London, UK',
+      period: 'Summer 2025',
       type: 'Internship',
-      description: 'Gained hands-on experience in software development and cloud technologies.',
+      description:
+        'Built a production microservice that streamlines creation of LLM knowledge bases, integrating seamlessly with existing engineering workflows.',
       achievements: [
-        'Worked on real-world software development projects under senior guidance',
-        'Learned industry best practices for code review and version control',
-        'Participated in agile development processes and team collaboration',
-        'Gained exposure to cloud computing and DevOps practices'
+        'Designed and shipped a FastAPI microservice with endpoints to index Git repositories and register them into firmwide LLM knowledge bases',
+        'Implemented Confluence → knowledge-base export to enable querying documentation alongside code',
+        'Added an endpoint for engineers to chat directly with their knowledge bases',
+        'Integrated with CI/CD and webhooks to fit existing release pipelines and developer tooling',
+        'Built a job scheduler to safely handle concurrent indexing requests with retries and backoff',
+        'Produced clear API docs and concise examples to drive adoption; team estimates indicate ~US$1.3M annual savings'
       ],
-      technologies: ['JavaScript', 'Cloud Services', 'Agile', 'Team Collaboration'],
-      icon: <Cloud size={24} />
+      technologies: ['Python', 'FastAPI', 'Docker', 'Kubernetes', 'Oracle DB', 'REST APIs', 'CI/CD', 'Webhooks'],
+      icon: <Briefcase size={24} />
+    },
+    {
+      title: 'Software Engineering Intern (CIB, Securities Services)',
+      company: 'J.P. Morgan Chase',
+      location: 'London, UK',
+      period: 'Summer 2024',
+      type: 'Internship',
+      description:
+        'Created a scheduled repository-hygiene analysis tool to deliver continuous analytics across project repositories.',
+      achievements: [
+        'Developed a scheduler-driven analyser that generated up-to-date repo hygiene metrics across a large codebase',
+        'Integrated with internal APIs and applications to surface insights to stakeholders',
+        'Practised TDD with strong unit/integration coverage and peer code reviews',
+        'Containerised workloads and delivered via firm CI/CD; deployed to cloud/Kubernetes environments',
+        'Gained hands-on experience delivering maintainable software in a large enterprise setting'
+      ],
+      technologies: ['Python', 'Docker', 'AWS', 'Kubernetes', 'Jules CI/CD', 'Git', 'TDD'],
+      icon: <Briefcase size={24} />
     }
   ];
 
